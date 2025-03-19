@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/login.css">
+    <title>Login</title>
+</head>
+<body class="login">
+    <div class="container">
+        <!-- Login Form -->
+        <form id="loginForm">
+            <p>Username :1@gmail.com Password :password123</p>
+            <label for="email">Email:</label>
+            <input type="email" id="email" required>
+            
+            <label for="password">Password:</label>
+            <input type="password" id="password" required>
+            
+            <label>
+                <input type="checkbox"> Remember me
+            </label>
+            
+            <button type="submit">Login</button>
+            <p><a href="html/forgot-password.html">Forgot Password?</a></p>
+            <p>Don't have an account? <a href="html/signup.html">Create an account.</a></p>
+        </form>
+    </div>
+
+    <script src="js/scripts.js"></script>
+    <script>
+        // Pre-fill default credentials
+        window.onload = function() {
+            document.getElementById('email').value = '1@gmail.com';
+            document.getElementById('password').value = 'password123';
+        };
+
+        // Handle form submission
+        document.getElementById('loginForm').onsubmit = function(event) {
+            event.preventDefault(); // Prevent default form submission
+            const email = document.getElementById('email').value;
+            const password = document.getElementById('password').value;
+
+            // Check credentials
+            if (email === '1@gmail.com' && password === 'password123') {
+                window.location.href = 'html/homepage.html'; // Redirect to homepage
+            } else {
+                alert('Invalid credentials. Please try again.'); // Alert for invalid credentials
+            }
+        };
+    </script>
+</body>
+</html>

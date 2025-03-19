@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Profile Edit Page</title>
+<link rel="stylesheet" href="../css/profile.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Profile</h1>
+      <nav>
+        <a href="homepage.html">Home</a>
+        <a href="../login.html">Log Out</a>
+      </nav>
+    </header>
+
+    <form>
+      <div class="profile-avatar">
+        <img src="../images/profilepic.png" alt="Profile Picture">
+        <div>
+          <span><strong>Edit Your Profile</strong></span>
+        </div>
+      </div>
+
+      <div class="form-row">
+        <div class="form-group">
+          <label for="first-name">First Name</label>
+          <input type="text" id="first-name" placeholder="First Name">
+        </div>
+
+        <div class="form-group">
+          <label for="last-name">Last Name</label>
+          <input type="text" id="last-name" placeholder="Last Name">
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label for="gender">Gender</label>
+        <select id="gender">
+          <option value="male">MALE</option>
+          <option value="female">FEMALE</option>
+          <option value="prefer-not">Rather not to say</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label for="dob">Date of Birth</label>
+        <input type="text" id="dob" placeholder="yyyy/m/dd">
+      </div>
+
+      <div class="form-group">
+        <label for="email">Email/Username</label>
+        <input type="email" id="email" placeholder="Enter your email">
+      </div>
+
+      <div class="form-group">
+        <label for="phone-number">Phone number</label>
+        <input type="tel" id="phone-number" placeholder="(000) 000-0000">
+      </div>
+
+      <div class="button-group">
+        <button type="submit" class="save-btn">Save</button>
+        <button type="button" class="cancel-btn">Cancel</button>
+      </div>
+    </form>
+  </div>
+</body>
+</html>

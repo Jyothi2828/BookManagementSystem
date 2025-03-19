@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/signup.css">
+    <title>Sign Up</title>
+</head>
+<body class="signup">
+   
+    <form id="signupForm" novalidate>
+        <label for="firstName">First Name:</label>
+        <input type="text" id="firstName" required aria-describedby="firstNameError">
+        <span id="firstNameError" class="error-message" style="display:none;">Invalid First Name</span>
+        
+        <label for="lastName">Last Name:</label>
+        <input type="text" id="lastName" required aria-describedby="lastNameError">
+        <span id="lastNameError" class="error-message" style="display:none;">Invalid Last Name</span>
+        
+        <label for="email">Email:</label>
+        <input type="email" id="email" required aria-describedby="emailError">
+        <span id="emailError" class="error-message" style="display:none;">Invalid Email Address</span>
+        
+        <label for="password">Password:</label>
+        <input type="password" id="password" required aria-describedby="passwordError">
+        <span id="passwordError" class="error-message" style="display:none;">Invalid Password</span>
+        
+        <label for="rePassword">Re-Enter Password:</label>
+        <input type="password" id="rePassword" required aria-describedby="rePasswordError">
+        <span id="rePasswordError" class="error-message" style="display:none;">Passwords do not match</span>
+        
+        <button type="submit">Create Account</button>
+        
+        <label>
+            <input type="checkbox" id="bookStoreSignup">
+            Yes, Please sign me up for Book Store
+        </label>
+        <p>Already have an account? <a href="../login.html">Login.</a></p>
+    </form>
+    <script src="../js/scripts.js"></script>
+</body>
+</html>

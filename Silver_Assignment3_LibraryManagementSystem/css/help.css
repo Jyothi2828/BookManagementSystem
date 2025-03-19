@@ -1,0 +1,42 @@
+
+body {
+  font-family: 'Calibri', sans-serif;
+  background: url('../images/bgimage.png') no-repeat center center fixed; /* Set the background image */
+  margin: 0;
+  padding: 0;
+}
+.container {
+  max-width: 800px;
+  margin: 50px auto;
+  padding: 20px;
+  background-color: #ffffff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+h1 {
+  color: #274c77;
+  text-align: center;
+}
+p {
+  color: #333;
+  line-height: 1.6;
+}
+ul {
+  padding-left: 20px;
+}
+li {
+  margin-bottom: 10px;
+}
+a {
+  color: #6096ba;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+.logo img {
+  width: 60px; /* Keep the natural width */
+  height: 60px; /* Keep the natural height */
+  display: block; /* Optional: Avoid extra space below the image */
+}

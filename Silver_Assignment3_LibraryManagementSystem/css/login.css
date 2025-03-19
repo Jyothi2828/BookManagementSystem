@@ -1,0 +1,105 @@
+/* General styles for the entire Book Reservation System */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: url('../images/bgimage.png') no-repeat center center fixed; /* Set the background image */
+
+
+}
+
+/* ===== LOGIN PAGE STYLES ===== */
+body.login {
+    background: url('../images/loginbg.png') no-repeat center center fixed; /* Set the background image */
+    background-size: cover; /* Ensure the image covers the entire background */
+    display: flex; /* Use flexbox to center the form */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    height: 100vh; /* Full viewport height */
+    width: 100vw; /* Ensure it takes the full width of the screen */
+}
+
+
+/* Container for centering heading and form together */
+.container {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center the content horizontally */
+}
+
+.logo img {
+    width: 60px; /* Keep the natural width */
+    height: 60px; /* Keep the natural height */
+    display: block; /* Optional: Avoid extra space below the image */
+  }
+
+/* Style for the form */
+form {
+    max-width: 400px; /* Max width of the form */
+    width: 100%; /* Ensure the form fills the width up to max-width */
+    padding: 20px;
+    background: white; /* Solid white background for the form */
+    border-radius: 8px; /* Rounded corners for the form */
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3); /* Box shadow to make it stand out */
+    text-align: center;
+}
+
+/* Style for headings */
+h1, h2 {
+    color: white; /* Make text visible on top of background image */
+    margin: 10px 0; /* Add some spacing between the headings */
+}
+
+/* Style form labels */
+label {
+    display: block;
+    margin: 10px 0 5px;
+    font-weight: bold;
+}
+
+/* Style input fields */
+input[type="email"],
+input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+/* Remember me checkbox */
+input[type="checkbox"] {
+    margin-right: 5px;
+}
+
+/* Style the login button */
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Forgot Password and Signup Links */
+p {
+    text-align: center;
+}
+
+p a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+p a:hover {
+    text-decoration: underline;
+}

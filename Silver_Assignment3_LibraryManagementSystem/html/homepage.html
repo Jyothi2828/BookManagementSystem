@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Search</title>
+    <link rel="stylesheet" href="../css/homepage.css">
+    <style>
+        /* Dropdown Menu Styles */
+        .dropdown {
+            position: relative;
+            display: inline-block;
+            margin-right: auto; /* Push to extreme left */
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width: 200px; /* Increase width */
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+        }
+
+        .dropdown-content a {
+            color: black;
+            padding: 15px 20px; /* Increase padding for elongation */
+            text-decoration: none;
+            display: block;
+            white-space: nowrap; /* Prevent wrapping */
+        }
+
+        .dropdown-content a:hover {
+            background-color: #f1f1f1;
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+        .menu {
+            cursor: pointer;
+            font-size: 24px; /* Size of the hamburger icon */
+        }
+
+        .hamburger {
+            display: inline-block;
+            cursor: pointer;
+        }
+
+        .hamburger div {
+            width: 30px;
+            height: 3px;
+            background-color: black;
+            margin: 5px 0;
+        }
+
+        nav {
+            display: flex;
+            align-items: center; /* Align items vertically */
+            gap: 10px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="../images/logo.png" alt="Logo">
+          </div>
+        <input type="text" placeholder="Search Book">
+        <button class="search-btn">🔍</button>   
+        <a href="../login.html">
+            <button class="logout">Logout</button>
+          </a>    </header>
+
+    <nav>
+        <!-- Importing the dropdown component -->
+        <div class="dropdown">
+            <div class="hamburger" onclick="toggleDropdown()">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+            <div class="dropdown-content">
+                <a href="../html/profile.html">My Profile</a>
+                <a href="../html/myreservations.html">My Reservations</a>
+                <a href="../html/help.html">Help</a>
+                <a href="../login.html">Logout</a>    
+            </div>
+        </div>
+        <button>Popular</button>
+        <button>Categories</button>
+        <button>Recent</button>
+        <button>Based on your History</button>
+    </nav>
+
+    <main>
+        <div class="book-grid">
+            <div class="book-card">
+                <div class="book-cover">The Great Gatsby</div>
+                <button class="details-btn" onclick="window.location.href='bookdetails.html?title=The Great Gatsby'">Details</button>
+            </div>
+            <div class="book-card">
+                <div class="book-cover">1984</div>
+                <button class="details-btn" onclick="window.location.href='bookdetails.html?title=1984'">Details</button>
+            </div>
+            <div class="book-card">
+                <div class="book-cover">To Kill a Mockingbird</div>
+                <button class="details-btn" onclick="window.location.href='bookdetails.html?title=To Kill a Mockingbird'">Details</button>
+            </div>
+            <div class="book-card">
+                <div class="book-cover">Book 4 Title</div>
+                <button class="details-btn" onclick="window.location.href='bookdetails.html?title=Book 4 Title'">Details</button>
+            </div>
+        </div>
+    </main>
+
+    <script src="../js/scripts.js"></script>
+    <script>
+        function toggleDropdown() {
+            const dropdownContent = document.querySelector('.dropdown-content');
+            dropdownContent.style.display = dropdownContent.style.display === 'block' ? 'none' : 'block';
+        }
+        
+    </script>
+</body>
+</html>
